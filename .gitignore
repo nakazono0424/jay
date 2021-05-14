@@ -41,3 +41,7 @@ db/schema.rb
 
 # Attic directory
 attic/
+
+################
+## rspec failure tracking
+.rspec_status
