@@ -106,3 +106,5 @@ gem 'font-awesome-sass'
 
 gem 'kaminari'
 gem 'kaminari-bootstrap'
+
+gem 'rspec'
