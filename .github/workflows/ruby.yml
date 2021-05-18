@@ -9,15 +9,10 @@ name: Ruby
 
 on:
   pull_request:
-    branches: 
-      - test
-    types: [opened, synchronize]
-
 jobs:
   Rspec-test:
 
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
       with:
@@ -29,8 +24,8 @@ jobs:
       uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
       with:
         ruby-version: 3.0.1
-    #    bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Install dependencies
       run: bundle install
     - name: Run RSpec
-      run: bundle exec rspec
+      run: 
+        bundle exec rspec
