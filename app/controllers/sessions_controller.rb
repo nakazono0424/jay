@@ -12,10 +12,10 @@ class SessionsController < ApplicationController
   def create
     auth = request.env["omniauth.auth"]
 
-    unless auth.credentials.active_member?
-      render text: "Unauthorized", status: 401
-      return false
-    end
+    # unless auth.credentials.active_member?
+    #   render text: "Unauthorized", status: 401
+    #   return false
+    # end
 
     user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) ||
            User.create_with_omniauth(auth)
