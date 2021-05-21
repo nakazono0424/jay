@@ -4,6 +4,7 @@
 
 * What is jay?
   jay is a simple markdown editor for memo and taking minutes
+  test
 
 * Setup Ruby Environment
   | Ruby  | 2.2.1 |
