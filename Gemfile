@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.4.3'
+ruby '3.0.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
+gem 'rails', '~> 6.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -67,7 +67,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 
 # pure-ruby markdown to HTML converter
-gem "kramdown", "~> 2.0"
+gem "kramdown"
 gem 'kramdown-parser-gfm'
 
 ################
@@ -75,14 +75,14 @@ gem 'kramdown-parser-gfm'
 # https://github.com/jch/html-pipeline#dependencies
 # See html-pipeline's Gemfile :test block for version requirements.
 #
-gem 'html-pipeline', '~> 2.14.0'
+gem 'html-pipeline'
 gem 'rinku'    ## for AutolinkFilter
 gem 'gemoji'   ## for EmojiFilter
 gem 'sanitize' ## for SanitizationFilter
 gem 'rouge'    ## for SyntaxHighlightFilter
 
 # OmniAuth + github
-gem 'omniauth'
+gem 'omniauth', '~> 1.9'
 gem 'omniauth-github'
 gem "omniauth-github-team-member"
 
@@ -90,19 +90,21 @@ gem "omniauth-github-team-member"
 gem "settingslogic"
 
 # Octokit -- Github access lib
-gem "octokit", "~> 3.0"
+gem "octokit"
 
 # for Emoji completion
 gem 'jquery-textcomplete-rails'
 
 # https://github.com/twbs/bootstrap-sass
-gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-sass'
 
 # haml
 gem 'haml-rails'
 
 # for extension font
-gem 'font-awesome-sass', '~> 4.0'
+gem 'font-awesome-sass'
 
 gem 'kaminari'
 gem 'kaminari-bootstrap'
+
+gem 'rspec'
