@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.0.3'
+gem 'rails', '~> 6.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -82,7 +82,7 @@ gem 'sanitize' ## for SanitizationFilter
 gem 'rouge'    ## for SyntaxHighlightFilter
 
 # OmniAuth + github
-gem 'omniauth', '1.9'
+gem 'omniauth', '~> 1.9'
 gem 'omniauth-github'
 gem "omniauth-github-team-member"
 
