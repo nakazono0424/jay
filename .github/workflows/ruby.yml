@@ -35,6 +35,8 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Copy application_settings.yml
+      run: cp config/application_settings_sample.yml config/application_settings.yml
     - name: Set up database
       run: bundle exec rails db:migrate
     - name: Run tests
